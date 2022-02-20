@@ -1,0 +1,20 @@
+.navbar
+{
+    display: flex;
+    justify-content: stretch;
+}
+.navbar-L
+{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar-R
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ul
+{
+    
+}
