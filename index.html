@@ -9,33 +9,62 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="stylesheet" href="/assets/css/base.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css">
+    <title>Shopee của PN</title>
 </head>
 <body>
     <div class="app">
         <!-- --------------------------Phần header --------------------- -->
         <header class="header">
-            <nav class="navbar">
-                <ul class="navbar-L">
-                    <li class="navbar-L__item">Kênh người bán</li>
-                    <li class="navbar-L__item">Trở thành người bán</li>
-                    <li class="navbar-L__item">Tải ứng dụng</li>
-                    <li class="navbar-L__item">Kết nối</li>
-                </ul>
-                <ul class="navbar-R">
-                    <li class="navbar-R__item">
-                        <a href="" class="navbar-R__item-link">Thông báo</a>
-                    </li>
-                    <li class="navbar-R__item">
-                        <a href="" class="navbar-R__item-link">Trợ giúp</a>                    
-                    </li>
-                    <li class="navbar-R__item">Tiếng Việt</li>
-                    <li class="navbar-R__item">Đăng ký</li>
-                    <li class="navbar-R__item">Đăng nhập</li>
+            <div class="grid">
+                <nav class="navbar">
+                    <ul class="navbar__header">
+                        <li class="navbar__item navbar__item--separate">Kênh người bán</li>
+                        <li class="navbar__item navbar__item--separate">Trở thành người bán</li>
+                        <!-- ----------------------Header QR_CODE---------------------- -->
+                        <li class="navbar__item navbar__qr-code--show navbar__item--separate ">    
+                                Tải ứng dụng                            
+                            <div class="navbar__qr-code">
+                                <img class="navbar__img-qr_code" src="./assets/img/qr_code.png" alt="Qr_code">
+                                <div class="navbar__apps">
+                                    <a href="" class="navbar__app_link">
+                                        <img src="./assets/img/app_store.png" alt="App store" class="navbar__app-down">
+                                    </a>
+                                    <a href="" class="navbar__app_link">
+                                        <img src="./assets/img/gg_play.png" alt="Google play" class="navbar__app-down">
+                                    </a>
 
-                </ul>
-                
-            </nav>
+    
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar__item ">
+                            <span class="navbar__item--contact">Kết nối</span>
+                            <a href="" class=" navbar__item-icon"><i class=" navbar_icon fa-brands fa-facebook"></i></a>
+                            <a href="" class="navbar__item-icon"><i class=" navbar_icon fa-brands fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="navbar__header">
+                        <li class="navbar__item">
+                            <a href="" class="navbar__item-icon"><i class=" navbar_icon fa-solid fa-bell"></i></a>
+                            <a href="" class="navbar__item-link">Thông báo</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__item-icon"><i class=" navbar_icon fa-solid fa-circle-question"></i></a>
+                            <a href="" class="navbar__item-link">Trợ giúp</a>                    
+                        </li>
+                        <li class="navbar__item">
+                            <a href="" class="navbar__item-icon"><i class=" navbar_icon fa-solid fa-globe"></i></a>
+                            Tiếng Việt
+                            <a href="" class="navbar__item-icon"><i class=" navbar_icon fa-solid fa-angle-down"></i></a>
+                        </li>
+                        <li class="navbar__item navbar__item--strong navbar__item--separate">Đăng ký</li>
+                        <li class="navbar__item navbar__item--strong ">Đăng nhập</li>
+    
+                    </ul>
+                    
+                </nav>
+            </div>
             
 
 

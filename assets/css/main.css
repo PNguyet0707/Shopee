@@ -1,20 +1,156 @@
+/* --------------Animation ------------- */
+@keyframes fadeIn 
+{
+    from
+    {
+        opacity: 0;
+
+    }
+    to
+    {
+        opacity: 1;
+
+    }
+}
+.header
+{
+    height: 120px;
+    background-image: linear-gradient(0,#fe6432,#f53d2d);
+}
 .navbar
-{
-    display: flex;
-    justify-content: stretch;
-}
-.navbar-L
-{
-    display: flex;
-    justify-content: space-around;
-}
-.navbar-R
 {
     display: flex;
     justify-content: space-between;
 }
-
-.ul
+.navbar__header
 {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 4px;
+}
+.navbar__item
+{
+    margin: 0 8px;
+    position: relative;
+    min-height: 26px;
+}
+
+.navbar__item, 
+.navbar__item-link
+{
+    display: inline-block;
+    font-size: 1.3rem;
+    color: var(--white-color);
+    text-decoration: none; /*Bỏ thuộc tính gạch chân của thẻ a - note lại cho nhớ--*/
+    font-weight: 350;
+
+}
+.navbar__item, 
+.navbar__item-link,
+navbar_icon
+{
+    display: inline-flex;
+    align-items: center;
+
+}
+.navbar__item:hover,
+.navbar__item-icon:hover, 
+.navbar__item-link:hover
+{
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+
+}
+.navbar__item--strong
+{
+    font-weight: 450;
+}
+.navbar__item--separate::after
+{
+    content: "";
+    position: absolute;
+    display: block;
+    border-left: 1px solid #f86d5b;
+    height: 16px;
+    top:50%;
+    transform: translateY(-50%);
+    right: -9px;
+    
+
+}
+.navbar__item--contact
+{
+    cursor: text;
+    color: var(--white-color);
+
+}
+.navbar__item-icon
+{
+    color: var(--white-color);
+}
+.navbar_icon
+{
+    font-size: 1.6rem;
+    margin: 0 5px;
+
+}
+/* -----------------------Header navbar qr__code---------------------- */
+
+.navbar__qr-code 
+{
+    position: absolute;
+    background-color: var(--white-color);
+    left: 0;
+    width: 186px;
+    top:100%; /* dính sát vô phần tử cha chứa nó*/
+    border-radius: 2px; /* border góc của ảnh */
+    padding: 4px;
+    display: none;
+    animation: fadeIn ease-in 0.3s ;
+
+
+}
+.navbar__qr-code ::before
+{
+    position: absolute;
+    left: 0;
+    top: -18px;
+    height: 20px;
+    width: 100%;
+    display: block;
+
+
+}
+.navbar__qr-code--show:hover .navbar__qr-code
+{
+    display: block;
+
+
+}
+.navbar__img-qr_code
+{
+  width: 100%;  /*chiều ngang bằng với cha  */
+
+}
+.navbar__apps
+{
+    display: flex;
+    justify-content: space-between;
+
+}
+.navbar__app_link:first-child
+{
+    padding-left: 11px;
+
+}   
+.navbar__app_link:last-child
+{
+    padding-right: 11px;
+}
+
+
+.navbar__app-down
+{
+    height: 16px;  
     
 }
