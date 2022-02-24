@@ -1,17 +1,4 @@
-/* --------------Animation ------------- */
-@keyframes fadeIn 
-{
-    from
-    {
-        opacity: 0;
 
-    }
-    to
-    {
-        opacity: 1;
-
-    }
-}
 .header
 {
     height: 120px;
@@ -87,6 +74,7 @@ navbar_icon
 .navbar__item-icon
 {
     color: var(--white-color);
+    text-decoration: none;
 }
 .navbar_icon
 {
@@ -113,6 +101,7 @@ navbar_icon
 .navbar__qr-code ::before
 {
     position: absolute;
+    content: "";
     left: 0;
     top: -18px;
     height: 20px;
@@ -153,4 +142,184 @@ navbar_icon
 {
     height: 16px;  
     
+}
+/* -------------------HEADER NOTIFICATION-------------- */
+.navbar__noti
+{
+    position: absolute;
+    background-color: var(--white-color);
+    border: 1px solid #999;
+    top: 118%;
+    right: 0;
+    width: 400px;
+    transform-origin: calc(100-20px) top ;
+    animation: HeaderNotishow ease-in 0.2s;
+    display: none;
+    will-change: opacity,transform; /* khai báo để trình duyệt tối ưu hóa thuộc tính này*/
+
+
+}
+/* Để làm mũi tên đổ xuống thông báo , có thể dùng clip-path để làm */
+.navbar__noti ::before 
+{
+    content: "";
+    position: absolute;
+    right: 12px;
+    top: -35px;
+    /* height: 40px; */
+    /* width: 100%; */
+    display: block;
+    border-style: solid;
+    border-width: 20px 27px;
+    border-color: transparent transparent var(--white-color) transparent;
+    /* background-color: #fff; */
+
+
+}
+.navbar__noti::after
+{
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -20px;
+    width: 80px;
+    height: 20px;
+    
+
+}
+.navbar__noti--show:hover .navbar__noti
+{
+    display: block;
+    
+
+}
+.navbar__noti-header
+{
+    height: 40px;
+    cursor: text;
+
+
+
+}
+.navbar__noti-header h3
+{
+    margin: 0 0 0 12px;
+    color: #B6B6B6;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 1.4rem;
+    user-select: none; /*Không cho người dùng copy đoạn text*/
+}
+.navbar__noti-list
+{
+    padding-left: 0; /*loại bỏ thuộc tính padding-left =40 của thẻ ul*/
+    
+    
+
+}
+.navbar__noti-item:hover
+{
+    background-color: #f7f7f7f7;
+    
+}
+.navbar__noti-item--read
+{
+    background-color: rgba(238,75,43,0.08);
+    width: 100%;
+    
+}
+.navbar__noti-link
+{
+    display: flex; 
+    padding-top: 8px;
+    /* justify-content: space-between; */
+    text-decoration: none;
+    /* margin: 8px 20px 8px 5px ; trên phải dưới trái */
+    
+    
+    
+
+
+
+}
+.navbar__noti-item-img
+{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 5px;
+
+}
+.navbar__noti-item_content
+{
+    display: flex;
+    flex-direction: column;
+    /* padding-left: 5px; */
+    margin-bottom: 5px;
+    /* margin: 8px 20px 8px 5px ; trên phải dưới trái */
+ 
+
+}
+.navbar__noti-mes
+{
+    font-size: 1.4rem;
+    line-height: 1.68rem;
+    /* width: 325px; */
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 5px;
+
+
+}
+.navbar__noti-des
+{
+    font-size: 1.2rem;
+    /* width: 325px; */
+    line-height: 1.5rem;
+    color: #756F6E;
+}
+.navbar__noti-footer
+{
+    text-align: center;
+    /* margin-top: 8px; */
+
+
+}
+.navbar__noti-footer-btn
+{
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 8px 48px;
+    font-weight: 370;
+    display: inline-block;
+    color: var(---text-color);
+
+}
+
+/* --------------Animation -------------------------------------------*/
+@keyframes fadeIn 
+{
+    from
+    {
+        opacity: 0;
+
+    }
+    to
+    {
+        opacity: 1;
+
+    }
+}
+@keyframes HeaderNotishow
+{
+    from
+    {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
