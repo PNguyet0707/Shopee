@@ -22,6 +22,7 @@ html
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+/* -------------------Responsive----------------------------- */
 .grid
 {
     width: 1200px;
@@ -36,7 +37,31 @@ html
 {
     display: flex;
     flex-wrap:wrap ;
+    margin-left: -5px;
+    margin-right: -5px;
+
+    
 }
+.grid__column-2
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 16.6667%;
+}
+.grid__column-10
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 83.3333%;
+
+}
+.grid__column-2-10
+{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 20%;
+}
+/* -----------------------Modal--------------------- */
 .modal
 {
     position: fixed;
@@ -101,4 +126,64 @@ html
 {
     height: 32px;
     padding: 0 10px;
+}
+
+.selection-input
+{
+    min-width: 200px;
+    height: 34px;
+    background-color: var(--white-color);
+    color: var(--text-color);
+    border: none;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 1.5rem;
+    line-height: 34px;
+    cursor: pointer;
+    
+
+}
+
+
+/* --------------Animation -------------------------------------------*/
+@keyframes fadeIn 
+{
+    from
+    {
+        opacity: 0;
+
+    }
+    to
+    {
+        opacity: 1;
+
+    }
+}
+@keyframes HeaderNotishow
+{
+    from
+    {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to
+    {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@keyframes growth
+{
+    from
+    {
+        transform: scale(var(--growth-from));
+
+
+    }
+    to 
+    {
+        transform: scale(var(--growth-to));
+
+
+    }
 }
