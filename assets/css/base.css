@@ -145,6 +145,40 @@ html
 }
 
 
+/* ----------------------Pagination--------------- --------------------*/
+.home-product--pagination
+{
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+.pagination
+{
+
+}
+.pagination__list
+{
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    list-style: none ;
+
+}
+.pagination__list-item-link
+{
+    display: block;
+    height: 30px;
+    min-width: 40px;
+    font-size: 2rem;
+    font-weight: 350;
+    line-height: 30px;
+    color: #939393;
+    text-decoration: none;
+    margin: 0 15px;
+    border-radius: 2px;
+
+}
+
 /* --------------Animation -------------------------------------------*/
 @keyframes fadeIn 
 {
@@ -187,3 +221,4 @@ html
 
     }
 }
+
