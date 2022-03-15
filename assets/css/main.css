@@ -1492,6 +1492,7 @@ i.home-product-item__like-fill
 .footer
 {
     padding: 5px 0;
+    border-top: 4px solid var(--primary-color);
 
 
 }
